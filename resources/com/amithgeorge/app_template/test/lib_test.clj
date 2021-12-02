@@ -1,6 +1,6 @@
-(ns {{top/ns}}.{{main/ns}}-test
+(ns {{top/ns}}.{{main/ns}}.{{main/ns}}-test
     (:require [clojure.test :refer [deftest testing is]]
-              [{{top/ns}}.{{main/ns}} :as sut]))
+              [{{top/ns}}.{{main/ns}}.{{main/ns}} :as sut]))
 
 (deftest a-test
   (testing "FIXME, I fail."

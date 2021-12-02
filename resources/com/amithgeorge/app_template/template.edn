@@ -7,7 +7,7 @@
  :versions/build-clj-tag "v0.6.0"
  :versions/build-clj-sha "2451bea"
  :transform
- [["src" "src/{{top/file}}"
-   {"main.clj" "{{main/file}}.clj"}]
-  ["test" "test/{{top/file}}"
-   {"main_test.clj" "{{main/file}}_test.clj"}]]}
+ [["src" "src/{{top/file}}/{{main/file}}"
+   {"lib.clj" "{{main/file}}.clj"}]
+  ["test" "test/{{top/file}}/{{main/file}}"
+   {"lib_test.clj" "{{main/file}}_test.clj"}]]}

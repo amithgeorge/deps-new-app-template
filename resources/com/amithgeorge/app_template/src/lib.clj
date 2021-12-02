@@ -1,0 +1,1 @@
+(ns {{top/ns}}.{{main/ns}}.{{main/ns}})

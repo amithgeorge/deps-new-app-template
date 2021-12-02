@@ -19,5 +19,5 @@ clojure -Sdeps '{:deps {com.amithgeorge/app-template {:git/sha "66d585eaa5e91678
 Execute
 
 ```shell
-clojure -Sdeps '{:deps {com.amithgeorge/app-template {:local/root "./app-template"}}}' -Tnew create :template com.amithgeorge/app-template :name test-app
+clojure -Sdeps '{:deps {com.amithgeorge/app-template {:local/root "./app-template"}}}' -Tnew create :template com.amithgeorge/app-template :name com.example/test-app
 ```
