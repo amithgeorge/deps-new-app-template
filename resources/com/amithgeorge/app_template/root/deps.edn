@@ -1,0 +1,10 @@
+{:paths ["src" "resources"]
+ :deps {org.clojure/clojure {:mvn/version "{{versions/clojure}}"}}
+ :aliases
+ {:test {:main-opts ["-m" "kaocha.runner" "--config-file" "test/tests.edn"]
+         :extra-paths ["test"]
+         :extra-deps {org.clojure/test.check {:mvn/version "{{versions/test.check}}"}
+                      lambdaisland/kaocha {:mvn/version "{{versions/kaocha}}"}}}
+  :build {:deps {io.github.seancorfield/build-clj
+                 {:git/tag "{{versions/build-clj-tag}}" :git/sha "{{versions/build-clj-sha}}"}}
+          :ns-default build}}}
