@@ -4,13 +4,13 @@
             [org.corfield.build :as bb]))
 
 (def version (format "1.0.%s" (b/git-count-revs nil)))
-(def main '{{top/ns}}.{{main/ns}})
+(def main '{{top/ns}}.{{main/ns}}.main)
 
 (defn uberjar
   "Create the uberjar"
   [opts]
   (println "Creating the uberjar")
   (-> opts
-      (assoc :lib lib :version version :main main)
+      (assoc :version version :main main)
       (bb/clean)
       (bb/uber)))
