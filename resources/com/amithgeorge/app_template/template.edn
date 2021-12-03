@@ -10,4 +10,6 @@
  [["src" "src/{{top/file}}/{{main/file}}"
    {"lib.clj" "{{main/file}}.clj"}]
   ["test" "test/{{top/file}}/{{main/file}}"
-   {"lib_test.clj" "{{main/file}}_test.clj"}]]}
+   {"lib_test.clj" "{{main/file}}_test.clj"}]
+  ;; temp workaround to retain +x permission on the file - https://github.com/seancorfield/deps-new/issues/22
+  ["root" "." {"bin/kaocha" "bin/kaocha"} :only :raw]]}
