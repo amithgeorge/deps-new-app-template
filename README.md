@@ -11,7 +11,7 @@ clojure -Ttools install io.github.seancorfield/deps-new '{:git/tag "v0.4.3"}' :a
 Execute
 
 ```shell
-clojure -Sdeps '{:deps {com.amithgeorge/app-template {:git/sha "59c7960cd3b0dd678b161ae7902a5ca017333708", :git/url "https://github.com/amithgeorge/deps-new-app-template.git"}}}' -Tnew create :template com.amithgeorge/app-template :name com.example/test-app
+clojure -Sdeps '{:deps {com.amithgeorge/app-template {:git/sha "8e6d86c374f9a1b151c22c7d54fc366312204541", :git/url "https://github.com/amithgeorge/deps-new-app-template.git"}}}' -Tnew create :template com.amithgeorge/app-template :name com.example/test-app
 ```
 
 This will create a repo with src files at the paths
