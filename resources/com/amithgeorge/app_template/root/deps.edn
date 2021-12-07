@@ -1,9 +1,12 @@
 {:paths ["src" "resources"]
  :deps {org.clojure/clojure {:mvn/version "{{versions/clojure}}"}}
  :aliases
- {:run {:main-opts ["-m" "{{top/ns}}.{{main/ns}}.main"]}
-  :test {:main-opts ["-m" "kaocha.runner" "--config-file" "test/tests.edn"]
-         :extra-paths ["test"]
+ {:run-main {:main-opts ["-m" "{{top/ns}}.{{main/ns}}.main"]}
+  :run-test {:main-opts ["-m" "kaocha.runner" "--config-file" "test/tests.edn"]
+             :extra-paths ["test"]
+             :extra-deps {org.clojure/test.check {:mvn/version "{{versions/test.check}}"}
+                          lambdaisland/kaocha {:mvn/version "{{versions/kaocha}}"}}}
+  :test {:extra-paths ["test"]
          :extra-deps {org.clojure/test.check {:mvn/version "{{versions/test.check}}"}
                       lambdaisland/kaocha {:mvn/version "{{versions/kaocha}}"}}}
   :build {:deps {io.github.seancorfield/build-clj
