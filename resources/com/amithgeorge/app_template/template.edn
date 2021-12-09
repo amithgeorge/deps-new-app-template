@@ -4,6 +4,7 @@
  :versions/clojure "1.10.3"
  :versions/test.check "1.1.1"
  :versions/kaocha "1.60.945"
+ :versions/clj-fakes "0.12.0"
  :versions/build-clj-tag "v0.6.0"
  :versions/build-clj-sha "2451bea"
  :transform
