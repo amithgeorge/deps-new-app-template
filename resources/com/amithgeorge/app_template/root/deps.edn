@@ -1,5 +1,6 @@
 {:paths ["src" "resources"]
- :deps {org.clojure/clojure {:mvn/version "{{versions/clojure}}"}}
+ :deps {org.clojure/clojure {:mvn/version "{{versions/clojure}}"}
+        metosin/malli {:mvn/version "{{versions/malli}}"}}
  :aliases
  {:run-main {:main-opts ["-m" "{{top/ns}}.{{main/ns}}.main"]}
   :run-test {:main-opts ["-m" "kaocha.runner" "--config-file" "test/tests.edn"]

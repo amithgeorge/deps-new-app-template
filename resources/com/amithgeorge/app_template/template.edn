@@ -2,6 +2,7 @@
  :data-fn com.amithgeorge.app-template/data-fn
  :template-fn com.amithgeorge.app-template/template-fn
  :versions/clojure "1.10.3"
+ :versions/malli "0.7.0"
  :versions/test.check "1.1.1"
  :versions/kaocha "1.60.945"
  :versions/clj-fakes "0.12.0"
