@@ -5,13 +5,13 @@
 Assuming you have installed `deps-new` as your `new` "tool" via:
 
 ```shell
-clojure -Ttools install io.github.seancorfield/deps-new '{:git/tag "v0.4.3"}' :as new
+clojure -Ttools install io.github.seancorfield/deps-new '{:git/tag "v0.4.9"}' :as new
 ```
 
 Execute
 
 ```shell
-clojure -Sdeps '{:deps {com.amithgeorge/app-template {:git/sha "d92722cc396d1871d663058410eca9eb1e84bb9c", :git/url "https://github.com/amithgeorge/deps-new-app-template.git"}}}' -Tnew create :template com.amithgeorge/app-template :name com.example/test-app
+clojure -Sdeps '{:deps {com.amithgeorge/app-template {:git/sha "e36daa1e939260802a60f4da7570f345096f8650", :git/url "https://github.com/amithgeorge/deps-new-app-template.git"}}}' -Tnew create :template com.amithgeorge/app-template :name com.example/test-app
 ```
 
 This will create a repo with src files at the paths
